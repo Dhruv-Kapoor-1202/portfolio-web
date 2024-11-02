@@ -2,186 +2,239 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page | Rishab Paul</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      background-color: transparent;
+      color: inherit
+    }
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap"
-    rel="stylesheet">
+    /* width */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
 
-  <title>Portfolio Website</title>
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #202020;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #333;
+      border-radius: 5px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #3b3b3b;
+    }
+  </style>
+
+  <!-- TODO: Fix the styles for text content -->
+  <!-- TODO: Create the footer section -->
+  <!-- TODO: Find out what more sections are to be added -->
+  <!-- TODO: (Optional) Update navbar - glassy/sticky??? -->
+
+
 </head>
 
-<body>
+<body class="flex flex-col items-center justify-start antialiased bg-neutral-950 text-neutral-100">
 
-  <!-- Header -->
+  <!-- Navbar  -->
+  <nav class="container flex items-center justify-between gap-2 p-2 px-4 py-4 ">
+    <div
+      class="inline-flex items-center justify-center gap-2 p-2 px-4 duration-300 border cursor-pointer border-neutral-950 rounded-xl hover:border-neutral-800">
+      <svg class="" width="30" height="30" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M3.87935 1H3.9H11.1H11.1207C11.5231 0.999994 11.8553 0.999989 12.1259 1.0221C12.407 1.04506 12.6653 1.09434 12.908 1.21799C13.2843 1.40973 13.5903 1.7157 13.782 2.09202C13.9057 2.33469 13.9549 2.59304 13.9779 2.87409C14 3.14468 14 3.47686 14 3.87934V3.9V11.1V11.1207C14 11.5231 14 11.8553 13.9779 12.1259C13.9549 12.407 13.9057 12.6653 13.782 12.908C13.5903 13.2843 13.2843 13.5903 12.908 13.782C12.6653 13.9057 12.407 13.9549 12.1259 13.9779C11.8553 14 11.5231 14 11.1207 14H11.1H3.9H3.87934C3.47686 14 3.14468 14 2.87409 13.9779C2.59304 13.9549 2.33469 13.9057 2.09202 13.782C1.7157 13.5903 1.40973 13.2843 1.21799 12.908C1.09434 12.6653 1.04506 12.407 1.0221 12.1259C0.999989 11.8553 0.999994 11.5231 1 11.1207V11.1207V11.1V3.9V3.87935V3.87934C0.999994 3.47686 0.999989 3.14468 1.0221 2.87409C1.04506 2.59304 1.09434 2.33469 1.21799 2.09202C1.40973 1.7157 1.7157 1.40973 2.09202 1.21799C2.33469 1.09434 2.59304 1.04506 2.87409 1.0221C3.14469 0.999989 3.47687 0.999994 3.87935 1ZM2.95552 2.01878C2.73631 2.03669 2.62421 2.06915 2.54601 2.10899C2.35785 2.20487 2.20487 2.35785 2.10899 2.54601C2.06915 2.62421 2.03669 2.73631 2.01878 2.95552C2.00039 3.18056 2 3.47171 2 3.9V7H7V2H3.9C3.47171 2 3.18056 2.00039 2.95552 2.01878ZM7 8H2V11.1C2 11.5283 2.00039 11.8194 2.01878 12.0445C2.03669 12.2637 2.06915 12.3758 2.10899 12.454C2.20487 12.6422 2.35785 12.7951 2.54601 12.891C2.62421 12.9309 2.73631 12.9633 2.95552 12.9812C3.18056 12.9996 3.47171 13 3.9 13H7V8ZM8 8H13V11.1C13 11.5283 12.9996 11.8194 12.9812 12.0445C12.9633 12.2637 12.9309 12.3758 12.891 12.454C12.7951 12.6422 12.6422 12.7951 12.454 12.891C12.3758 12.9309 12.2637 12.9633 12.0445 12.9812C11.8194 12.9996 11.5283 13 11.1 13H8V8ZM13 7H8V2H11.1C11.5283 2 11.8194 2.00039 12.0445 2.01878C12.2637 2.03669 12.3758 2.06915 12.454 2.10899C12.6422 2.20487 12.7951 2.35785 12.891 2.54601C12.9309 2.62421 12.9633 2.73631 12.9812 2.95552C12.9996 3.18056 13 3.47171 13 3.9V7Z"
+          fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+      </svg>
+      <p class="text-lg italic font-bold uppercase md:text-xl ">Logo</p>
+    </div>
+    <ul class="flex gap-2">
+      <li
+        class="p-2 px-4 font-normal duration-300 rounded-lg shadow-sm cursor-pointer bg-neutral-800 text-neutral-100 hover:bg-neutral-900 hover:rounded-xl">
+        Login
+      </li>
+      <li
+        class="p-2 px-4 font-normal duration-300 rounded-lg shadow-sm cursor-pointer bg-neutral-100 text-neutral-950 hover:bg-neutral-200 hover:rounded-xl">
+        Register
+      </li>
 
-  <header class="header container">
-    <nav class="navbar">
-      <ul class="header_menu">
-        <li>
-          <a class="header_link" href="#home">Home</a>
-        </li>
-        <li>
-          <a class="header_link" href="#about">About</a>
-        </li>
-        <li>
-          <a class="header_link" href="#contact">Contact</a>
-        </li>
-        <li>
-          <a class="header_link" href="./landing.html">Rishab Paul Landing Page</a>
-        </li>
-      </ul>
-      <div class="nav_btns">
-        <a href="#">Resume</a>
-        <button class="btn">Button</button>
+      <!-- TODO : When logged in display Dashboard -->
+      <!-- <li>Dashboard</li> -->
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="container grid grid-cols-1 gap-4 p-2 py-8 sm:py-12 md:grid-cols-2 lg:grid-cols-5">
+    <div
+      class="flex flex-col items-start h-[400px] lg:h-[600px] justify-end overflow-hidden bg-neutral-900/10 border border-neutral-900 lg:col-span-2 rounded-xl hover:rounded-3xl duration-300 relative p-4 sm:p-6 lg:p-10 ">
+      <img
+        class="bg-neutral-900 absolute border w-full object-cover object-left shadow-2xl shadow-neutral-800/40  -top-10 h-[300px] lg:h-[400px] p-1 -right-20 rounded-3xl border-neutral-700 opacity-55 -z-0 hover:-translate-y-1 duration-500  pb-0"
+        src="./Dashboard.png" />
+      <h1 class="">Empowering Healthcare</h1>
+      <p class="">Seamless Communication Between Doctors and Patients</p>
+    </div>
+
+    <div
+      class="relative flex flex-col min-h-[400px] items-start justify-start w-full row-span-2 overflow-hidden rounded-xl hover:rounded-3xl duration-300 bg-neutral-900/10 border border-neutral-900 lg:col-span-3 p-4 sm:p-6 lg:p-10">
+      <img
+        class="bg-neutral-900 absolute border w-full object-cover object-left shadow-2xl shadow-neutral-800/40 -bottom-20  sm:-bottom-10 h-[400px] lg:h-[650px] p-1 -right-10 rounded-3xl border-neutral-700 opacity-55 -z-0 hover:-translate-y-1 duration-500  pb-0"
+        src="./Dashboard.png" />
+      <p class="z-10">Experience the future of medical care with our Infirmary Management System.</p>
+    </div>
+
+    <div class="grid w-full h-40 grid-cols-1 gap-4 sm:grid-cols-2 lg:col-span-2">
+      <a href="#"
+        class="flex flex-col items-center justify-center w-full h-full col-span-1 font-normal duration-300 shadow-sm cursor-pointer rounded-xl bg-neutral-100 text-neutral-950 hover:bg-neutral-300 hover:rounded-3xl">Get
+        Started</a>
+      <a href="#"
+        class="flex flex-col items-center justify-center w-full h-full col-span-1 font-normal duration-300 border shadow-sm cursor-pointer rounded-xl hover:rounded-3xl border-neutral-900 hover:bg-neutral-950 text-neutral-100 group">
+        <p>
+          Learn More
+          <span class="block w-0 h-[1px] transition-all duration-300  group-hover:w-full bg-neutral-100"></span>
+        </p>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="container grid grid-cols-1 gap-4 p-2 py-8 sm:py-12 md:grid-cols-4 lg:grid-cols-6">
+    <div class="col-span-1 place-content-center md:col-span-4 lg:col-span-2">
+      <p class="">At [Your Infirmary Management System Name], we're committed to making
+        healthcare accessible,
+        efficient, and focused on the patient experience. Our platform brings doctors and patients together in a
+        seamless digital space.</p>
+    </div>
+
+    <ul class="grid col-span-1 gap-4 md:grid-rows-3 grid-cols-subgrid md:col-span-4 ">
+      <li
+        class="relative flex flex-col p-4 duration-300 border h-80 md:row-span-2 md:col-span-2 md:h-full rounded-xl hover:rounded-3xl bg-neutral-900/10 border-neutral-900 overflow-clip sm:p-6 lg:p-10">
+        <img
+          class="bg-neutral-900 absolute border w-full object-cover object-left shadow-2xl shadow-neutral-800/40 -bottom-20  h-[400px] lg:h-[500px] p-1 -right-20 rounded-3xl border-neutral-700 opacity-55 -z-0 hover:-translate-y-1 duration-500  pb-0"
+          src="./Dashboard.png" />
+        <p class="z-10">
+          Secure Login
+        </p>
+      </li>
+      <li
+        class="relative flex flex-col p-4 duration-300 border h-80 md:col-span-2 md:h-60 rounded-xl hover:rounded-3xl bg-neutral-900/10 border-neutral-900 overflow-clip sm:p-6 lg:p-10">
+        <img
+          class="bg-neutral-900 absolute border w-full object-cover object-left shadow-2xl shadow-neutral-800/40 -bottom-28 h-[300px] p-1 -left-20 rounded-3xl border-neutral-700 opacity-55 -z-0 hover:-translate-y-1 duration-500  pb-0"
+          src="./Dashboard.png" />
+        <p class="z-10">
+          Dashboard with Comprehensive Tools
+        </p>
+      </li>
+      <li
+        class="relative flex flex-col p-4 duration-300 border h-80 md:row-span-2 md:col-span-2 md:h-full rounded-xl hover:rounded-3xl bg-neutral-900/10 border-neutral-900 overflow-clip sm:p-6 lg:p-10">
+        <img
+          class="bg-neutral-900 absolute border w-full object-cover object-left shadow-2xl shadow-neutral-800/40  h-[400px] -right-20 p-1 -bottom-10 rounded-3xl border-neutral-700 opacity-55 -z-0 hover:-translate-y-1 duration-500  pb-0"
+          src="./Dashboard.png" />
+        <p class="z-10">
+          Real-Time Metrics
+        </p>
+      </li>
+      <li
+        class="relative flex flex-col p-4 duration-300 border h-80 md:col-span-2 md:h-full rounded-xl hover:rounded-3xl bg-neutral-900/10 border-neutral-900 overflow-clip sm:p-6 lg:p-10">
+        <img
+          class="bg-neutral-900 absolute border w-full object-cover object-left shadow-2xl shadow-neutral-800/40  h-[300px] -right-36 p-1 -top-28 rounded-3xl border-neutral-700 opacity-55 -z-0 hover:-translate-y-1 duration-500  pb-0"
+          src="./Dashboard.png" />
+        <p class="z-10 ">
+          Appointment Management
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Features Section -->
+  <section class="container p-2 py-8 sm:py-12">
+    <h2 class="text-center sm:pb-8">Why Choose Us?</h2>
+    <ul class="grid grid-cols-1 gap-4 md:grid-cols-3">
+      <li
+        class="col-span-1 rounded-xl hover:rounded-3xl duration-300 bg-neutral-900/10 border border-neutral-900  p-4 sm:p-6 lg:p-10 h-80 md:h-[450px] lg:h-[550px] relative overflow-clip ">
+        <img
+          class="bg-neutral-900 absolute border w-full object-cover object-left shadow-2xl shadow-neutral-800/40 top-20  sm:top-28 h-[400px] lg:h-[650px] p-1 -right-10 rounded-3xl border-neutral-700 opacity-55 -z-0 hover:-translate-y-1 duration-500  pb-0"
+          src="./Dashboard.png" />
+        <p>
+          User-Friendly Interface
+        </p>
+      </li>
+      <li
+        class="col-span-1 rounded-xl hover:rounded-3xl duration-300 bg-neutral-900/10 border border-neutral-900  p-4 sm:p-6 lg:p-10 h-80 md:h-[450px] lg:h-[550px] relative overflow-clip ">
+        <img
+          class="bg-neutral-900 absolute border w-full object-cover object-left shadow-2xl shadow-neutral-800/40 top-20  sm:top-28 h-[400px] lg:h-[650px] p-1 -right-10  rounded-3xl border-neutral-700 opacity-55 -z-0 hover:-translate-y-1 duration-500  pb-0"
+          src="./Dashboard.png" />
+        <p>
+          Privacy and Security
+        </p>
+      </li>
+      <li
+        class="col-span-1 rounded-xl hover:rounded-3xl duration-300 bg-neutral-900/10 border border-neutral-900  p-4 sm:p-6 lg:p-10 h-80 md:h-[450px] lg:h-[550px] relative overflow-clip ">
+        <img
+          class="bg-neutral-900 absolute border w-full object-cover object-right shadow-2xl shadow-neutral-800/40 top-20  sm:top-28 h-[400px] lg:h-[650px] p-1 -left-10  rounded-3xl border-neutral-700 opacity-55 -z-0 hover:-translate-y-1 duration-500  pb-0"
+          src="./Dashboard.png" />
+        <p>
+          24/7 Support
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section class="container grid grid-cols-1 gap-4 p-2 py-8 sm:py-12 md:grid-cols-2">
+    <div class="">
+      <h2 class="">Get in Touch</h2>
+      <p class="">Have questions or need assistance? We're here to help!</p>
+      <p>Email: <a href="mailto:support@yourinfirmary.com" class="">support@yourinfirmary.com</a></p>
+      <p>Phone: <span class="">(123) 456-7890</span></p>
+      <p class="">Follow Us: [Facebook] [Twitter] [LinkedIn]</p>
+    </div>
+
+    <form class="grid grid-cols-1 gap-4 sm:gap-6">
+      <div>
+        <label for="name" class="block font-semibold text-sm/6 text-neutral-100">Name</label>
+        <input type="text" id="name" placeholder="Name"
+          class="block w-full rounded-md border-0 px-3.5 py-2 text-neutral-100 shadow-sm ring-1 ring-inset ring-neutral-800 placeholder:text-neutral-400 focus:ring-2 focus:ring-inset focus:ring-neutral-500 sm:text-sm/6 mt-2"
+          autocomplete="name" required>
       </div>
-
-
-      <!-- hamburger -->
-      <!-- display: block -->
-      <button title="bars" class="hamburger_btn">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-          <path fill-rule="evenodd"
-            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-            clip-rule="evenodd" />
-        </svg>
-      </button>
-    </nav>
-
-  </header>
-
-
-  <!-- mobile nav -->
-  <div class="mobile-nav">
-    <nav>
-      <ul class="mobile-nav_menu">
-        <li>
-          <a class="mobile-nav_link" href="#home">Home</a>
-        </li>
-        <li>
-          <a class="mobile-nav_link" href="#about">About</a>
-        </li>
-        <li>
-          <a class="mobile-nav_link" href="#contact">Contact</a>
-        </li>
-        <!-- <li></li>
-                <li></li> -->
-      </ul>
-    </nav>
-  </div>
-
-
-  <!-- main -->
-
-  <main>
-
-    <!-- Hero -->
-
-    <section class="container hero" id="home">
-      <h1 class="section_heading">DHRUV<br>KAPOOR</h1>
-      <p class="hero_para">I like to make stuff<br>(mostly websites/sometimes maybe music)</p>
-    </section>
-
-    <!-- About -->
-
-    <section class="container about section" id="about">
-      <h2 class="section_heading">ABOUT</h2>
-      <p class="about_para">
-        This is the <strong>about section</strong>. This sections describes who I am and what I do and stuff. The stuff
-        I know and the stuff I'm currently working on. Lorem ipsum dolor, sit amet consectetur adipisicing elit <strong>
-          Accusamus nam</strong> ipsam fugiat a sequi exercitat delectus provident expedita sapiente quia. Lorem, ipsum
-        dolor sit amet consectetur <strong>adipisicing elit</strong>. Fugiat, quas? Maxime iste eos ipsum. Minus cum
-        excepturi expedita beatae <strong>tempora!</strong>
-      </p>
-      <p class="about_para">
-        This <strong>second paragraph</strong> also is to describe the stuff I do and the stuff I can do. <strong>Some
-          more</strong> lorem epsom coming your way. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        <strong>Dolore porro esse inventore soluta, alias natus, magni</strong> fugit pariatur voluptatibus maiores
-        ullam excepturi accusantium voluptatum fugiat laudantium nostrum necessitatibus? Libero, in!
-      </p>
-    </section>
-
-    <!-- Projects -->
-
-    <section class="container team section">
-      <h2 class="section_heading">PROJECTS</h2>
-      <div class="team_cards">
-        <div class="card">
-          <img src="" alt="">
-          <div class="team_name">
-            <h3 class="card_heading">NAME</h3>
-            <p class="card_para">Description</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="" alt="">
-          <div class="team_name">
-            <h3 class="card_heading">NAME</h3>
-            <p class="card_para">Description</p>
-          </div>
-        </div>
+      <div>
+        <label for="email" class="block font-semibold text-sm/6 text-neutral-100">Email</label>
+        <input type="email" id="email" placeholder="Email"
+          class="block w-full rounded-md border-0 px-3.5 py-2 text-neutral-100 shadow-sm ring-1 ring-inset ring-neutral-800 placeholder:text-neutral-400 focus:ring-2 focus:ring-inset focus:ring-neutral-500 sm:text-sm/6 mt-2"
+          autocomplete="email" required>
       </div>
-    </section>
-
-    <!-- Contact -->
-
-    <section class="container contact section" id="contact">
-      <h2 class="section_heading">CONTACT</h2>
-      <div class="contact_box">
-        <div class="contact_info">
-          <section class="contact_info-section">
-            <h3 class="contact_heading">EMAIL</h3>
-            <p class="contact_para">
-              dhruvkapoor1202@gmail.com<br>
-              dhruv1690.be21@chitkara.edu.in
-            </p>
-          </section>
-          <section class="contact_info-section">
-            <h3 class="contact_heading">PHONE</h3>
-            <p class="contact_para">6382-476-404</p>
-          </section>
-          <section class="contact_info-section">
-            <h3 class="contact_heading">SOCIALS</h3>
-            <p class="contact_para">something</p>
-          </section>
-        </div>
-
-        <form action="" class="contact_form">
-          <div class="input-group">
-            <input type="text" id="name" name="name" placeholder="Enter your name">
-            <label for="name">Enter your Name</label>
-          </div>
-          <div class="input-group">
-            <input type="email" id="email" name="email" placeholder="Enter a valid email">
-            <label for="email">Enter a valid email</label>
-          </div>
-          <div class="input-group">
-            <textarea id="form_message" name="form_message" rows="8" placeholder="Enter your message"></textarea>
-            <label for="form_message">Enter your message</label>
-          </div>
-          <!-- <input type="submit" class="btn" value="Register"> -->
-          <button class="btn register_btn" type="submit">Button</button>
-        </form>
+      <div>
+        <label for="message" class="block font-semibold text-sm/6 text-neutral-100">Message</label>
+        <textarea placeholder="Message" id="message"
+          class="block w-full rounded-md border-0 px-3.5 py-2 text-neutral-100 shadow-sm ring-1 ring-inset ring-neutral-800 placeholder:text-neutral-400 focus:ring-2 focus:ring-inset focus:ring-neutral-500 sm:text-sm/6 mt-2 "
+          rows="4" required></textarea>
       </div>
-    </section>
+      <button type="submit"
+        class="block w-full rounded-md bg-neutral-100 px-3.5 py-2.5 text-center text-sm font-semibold text-neutral-950 shadow-sm hover:bg-neutral-300 duration-300  hover:rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-400">Send
+        Message</button>
+    </form>
+  </section>
 
-  </main>
+  <!-- Call to Action Section -->
+  <section class="container p-2 py-8 sm:py-12">
+    <div
+      class="flex flex-col items-center justify-center h-60 md:h-96 bg-gradient-to-tr from-neutral-900 via-neutral-800 to-neutral-900 rounded-xl">
+      <h2 class="">Join Us Today!</h2>
+      <p class="">Experience a new era of healthcare management.</p>
+      <a href="#"
+        class="flex flex-col items-center justify-center p-2 px-4 font-normal duration-300 rounded-lg shadow-sm cursor-pointer bg-neutral-100 text-neutral-950 hover:bg-neutral-300 hover:rounded-xl">Sign
+        Up Now</a>
+    </div>
+  </section>
 
-  <!-- footer ??? -->
-
-  <footer class="container footer">
-    <h3 class="footer_title">
-      ~ Dhruv Kapoor ~
-    </h3>
-  </footer>
-
-
-
-
-  <script type="module" src="./src/main.js"></script>
 </body>
 
 </html>
